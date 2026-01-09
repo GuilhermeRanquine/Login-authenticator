@@ -12,5 +12,3 @@ def create_account():
     with open('accounts.csv', "a", newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([name, surname, age, cpf, email, password])
-    print(f"{name}, Account created successfully!")
-    
